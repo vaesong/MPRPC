@@ -1,0 +1,19 @@
+//使用的版本号
+syntax = "proto3";
+
+//相当于打包后的 C++ 命名空间
+package fixbug;
+
+
+//定义登录请求消息类型
+message LoginRequest{
+    string name = 1;
+    string pwd = 2;
+}
+
+//定义登录相应消息类型
+message LoginResponse{
+    int32 errcode = 1;
+    string errmsg = 2;
+    bool success = 3;
+}
