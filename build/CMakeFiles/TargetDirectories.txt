@@ -1,0 +1,2 @@
+/home/hrj/mprpc/build/src/CMakeFiles/mprpc.dir
+/home/hrj/mprpc/build/example/callee/CMakeFiles/provider.dir
