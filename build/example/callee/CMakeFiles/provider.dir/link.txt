@@ -1,1 +1,1 @@
-/opt/rh/devtoolset-11/root/usr/bin/c++       CMakeFiles/provider.dir/userservice.cc.o CMakeFiles/provider.dir/__/user.pb.cc.o  -o ../../../bin/provider  -L/home/hrj/mprpc/lib -rdynamic ../../../lib/libmprpc.so -lprotobuf -Wl,-rpath,/home/hrj/mprpc/lib 
+/opt/rh/devtoolset-11/root/usr/bin/c++  -Wl,-z,stack-size=4194304 -g   CMakeFiles/provider.dir/userservice.cc.o CMakeFiles/provider.dir/__/user.pb.cc.o  -o ../../../bin/provider  -L/home/hrj/mprpc/lib -Wl,-rpath,/home/hrj/mprpc/lib ../../../lib/libmprpc.a -lprotobuf -lpthread -lmuduo_net -lmuduo_base -lpthread 

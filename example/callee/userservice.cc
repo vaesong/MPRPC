@@ -37,10 +37,9 @@ public:
         code->set_errcode(0);
         code->set_errmsg("");
 
-        //执行回调操作 执行相应对象数据的序列化和网络发送（都是由框架来完成的）
+        //执行回调操作 执行相应对象数据的序列化和网络发送
         done->Run();
     }
-
 
 };
 
@@ -55,6 +54,7 @@ int main(int argc, char** argv){
 
     //启动一个 rpc 服务节点， Run 以后，进程进入阻塞状态，等待远程的 rpc 调用
     provider.Run();
+    // std::cout << "===================================" << std::endl;
 
     return 0;
 }

@@ -1,6 +1,14 @@
 #设置 cmake 的最低版本和项目名称
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.14)
 project(myrpc)
+
+#生成 debug 版本。可以进行gdb调试
+set(CMAKE_BUILD_TYPE "Debug")
+
+# 设置生成的时候的栈空间
+# add_compile_options(-Wl,--stack-size=4194304)
+set(CMAKE_CXX_FLAGS "-Wl,-z,stack-size=4194304")
+
 
 # 设置项目可执行文件输出的路径
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)

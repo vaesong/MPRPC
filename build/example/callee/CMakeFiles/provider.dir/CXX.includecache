@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -47,10 +47,30 @@ google/protobuf/port_undef.inc
 -
 
 ../src/include/mprpcapplication.h
+mprpcconfig.h
+../src/include/mprpcconfig.h
+
+../src/include/mprpcconfig.h
+iostream
+-
+string
+-
+unordered_map
+-
 
 ../src/include/rpcprovider.h
+string
+-
 google/protobuf/service.h
 ../src/include/google/protobuf/service.h
+muduo/net/TcpServer.h
+-
+muduo/net/EventLoop.h
+-
+muduo/net/InetAddress.h
+-
+unordered_map
+-
 
 /home/hrj/mprpc/example/callee/userservice.cc
 iostream
