@@ -7,10 +7,13 @@
 #IncludeRegexTransform: 
 
 ../src/include/mprpcapplication.h
+<<<<<<< HEAD
 mprpcchannel.h
 ../src/include/mprpcchannel.h
 mprpccontroller.h
 ../src/include/mprpccontroller.h
+=======
+>>>>>>> 8b4baa45c5657c41a2511b6ce8cdf3a9665db013
 mprpcconfig.h
 ../src/include/mprpcconfig.h
 
@@ -30,12 +33,15 @@ string
 unordered_map
 -
 
+<<<<<<< HEAD
 ../src/include/mprpccontroller.h
 google/protobuf/service.h
 -
 string
 -
 
+=======
+>>>>>>> 8b4baa45c5657c41a2511b6ce8cdf3a9665db013
 ../src/include/rpcheader.pb.h
 limits
 -
@@ -88,9 +94,15 @@ muduo/net/InetAddress.h
 unordered_map
 -
 
+<<<<<<< HEAD
 /home/vaesong/Data/Workspace/Vscode/Mprpc/src/mprpcapplication.cc
 mprpcapplication.h
 /home/vaesong/Data/Workspace/Vscode/Mprpc/src/mprpcapplication.h
+=======
+/home/hrj/mprpc/src/mprpcapplication.cc
+mprpcapplication.h
+/home/hrj/mprpc/src/mprpcapplication.h
+>>>>>>> 8b4baa45c5657c41a2511b6ce8cdf3a9665db013
 iostream
 -
 string
@@ -98,6 +110,7 @@ string
 unistd.h
 -
 
+<<<<<<< HEAD
 /home/vaesong/Data/Workspace/Vscode/Mprpc/src/mprpcchannel.cc
 mprpcchannel.h
 /home/vaesong/Data/Workspace/Vscode/Mprpc/src/mprpcchannel.h
@@ -105,6 +118,15 @@ rpcheader.pb.h
 /home/vaesong/Data/Workspace/Vscode/Mprpc/src/rpcheader.pb.h
 mprpcapplication.h
 /home/vaesong/Data/Workspace/Vscode/Mprpc/src/mprpcapplication.h
+=======
+/home/hrj/mprpc/src/mprpcchannel.cc
+mprpcchannel.h
+/home/hrj/mprpc/src/mprpcchannel.h
+rpcheader.pb.h
+/home/hrj/mprpc/src/rpcheader.pb.h
+mprpcapplication.h
+/home/hrj/mprpc/src/mprpcapplication.h
+>>>>>>> 8b4baa45c5657c41a2511b6ce8cdf3a9665db013
 sys/socket.h
 -
 sys/types.h
@@ -116,6 +138,7 @@ arpa/inet.h
 unistd.h
 -
 
+<<<<<<< HEAD
 /home/vaesong/Data/Workspace/Vscode/Mprpc/src/mprpccontroller.cc
 mprpccontroller.h
 /home/vaesong/Data/Workspace/Vscode/Mprpc/src/mprpccontroller.h
@@ -129,6 +152,45 @@ google/protobuf/descriptor.h
 -
 rpcheader.pb.h
 /home/vaesong/Data/Workspace/Vscode/Mprpc/src/rpcheader.pb.h
+=======
+/home/hrj/mprpc/src/mprpcconfig.cc
+mprpcconfig.h
+/home/hrj/mprpc/src/mprpcconfig.h
+
+/home/hrj/mprpc/src/rpcheader.pb.cc
+rpcheader.pb.h
+/home/hrj/mprpc/src/rpcheader.pb.h
+algorithm
+-
+google/protobuf/io/coded_stream.h
+-
+google/protobuf/extension_set.h
+-
+google/protobuf/wire_format_lite.h
+-
+google/protobuf/descriptor.h
+-
+google/protobuf/generated_message_reflection.h
+-
+google/protobuf/reflection_ops.h
+-
+google/protobuf/wire_format.h
+-
+google/protobuf/port_def.inc
+-
+google/protobuf/port_undef.inc
+-
+
+/home/hrj/mprpc/src/rpcprovider.cc
+mprpcapplication.h
+/home/hrj/mprpc/src/mprpcapplication.h
+rpcprovider.h
+/home/hrj/mprpc/src/rpcprovider.h
+google/protobuf/descriptor.h
+-
+rpcheader.pb.h
+/home/hrj/mprpc/src/rpcheader.pb.h
+>>>>>>> 8b4baa45c5657c41a2511b6ce8cdf3a9665db013
 pthread.h
 -
 

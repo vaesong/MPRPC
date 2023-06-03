@@ -1,11 +1,20 @@
 {
     "files.associations": {
         "*.cpp": "cpp",
+<<<<<<< HEAD
+=======
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "string": "cpp",
+>>>>>>> 8b4baa45c5657c41a2511b6ce8cdf3a9665db013
         "array": "cpp",
         "atomic": "cpp",
         "bit": "cpp",
         "*.tcc": "cpp",
+<<<<<<< HEAD
         "bitset": "cpp",
+=======
+>>>>>>> 8b4baa45c5657c41a2511b6ce8cdf3a9665db013
         "cctype": "cpp",
         "chrono": "cpp",
         "clocale": "cpp",
@@ -23,7 +32,14 @@
         "cwchar": "cpp",
         "cwctype": "cpp",
         "deque": "cpp",
+<<<<<<< HEAD
         "unordered_map": "cpp",
+=======
+        "map": "cpp",
+        "set": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+>>>>>>> 8b4baa45c5657c41a2511b6ce8cdf3a9665db013
         "vector": "cpp",
         "exception": "cpp",
         "algorithm": "cpp",
@@ -32,29 +48,47 @@
         "memory": "cpp",
         "memory_resource": "cpp",
         "numeric": "cpp",
+<<<<<<< HEAD
         "optional": "cpp",
         "random": "cpp",
         "ratio": "cpp",
         "string": "cpp",
+=======
+        "random": "cpp",
+        "ratio": "cpp",
+>>>>>>> 8b4baa45c5657c41a2511b6ce8cdf3a9665db013
         "string_view": "cpp",
         "system_error": "cpp",
         "tuple": "cpp",
         "type_traits": "cpp",
         "utility": "cpp",
+<<<<<<< HEAD
         "initializer_list": "cpp",
         "iosfwd": "cpp",
         "iostream": "cpp",
+=======
+        "fstream": "cpp",
+        "initializer_list": "cpp",
+        "iosfwd": "cpp",
+>>>>>>> 8b4baa45c5657c41a2511b6ce8cdf3a9665db013
         "istream": "cpp",
         "limits": "cpp",
         "mutex": "cpp",
         "new": "cpp",
+<<<<<<< HEAD
         "ostream": "cpp",
         "ranges": "cpp",
+=======
+        "numbers": "cpp",
+        "semaphore": "cpp",
+        "sstream": "cpp",
+>>>>>>> 8b4baa45c5657c41a2511b6ce8cdf3a9665db013
         "stdexcept": "cpp",
         "stop_token": "cpp",
         "streambuf": "cpp",
         "thread": "cpp",
         "typeinfo": "cpp",
+<<<<<<< HEAD
         "__nullptr": "cpp",
         "complex": "cpp",
         "list": "cpp",
@@ -65,5 +99,15 @@
         "cinttypes": "cpp",
         "typeindex": "cpp",
         "variant": "cpp"
+=======
+        "bitset": "cpp",
+        "complex": "cpp",
+        "list": "cpp",
+        "cinttypes": "cpp",
+        "typeindex": "cpp",
+        "optional": "cpp",
+        "variant": "cpp",
+        "*.inc": "cpp"
+>>>>>>> 8b4baa45c5657c41a2511b6ce8cdf3a9665db013
     }
 }

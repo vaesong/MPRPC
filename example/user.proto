@@ -19,6 +19,7 @@ message LoginResponse{
     bool success = 2;
 }
 
+<<<<<<< HEAD
 message RegisterRequest{
     int32 id = 1;
     bytes name = 2;
@@ -33,4 +34,8 @@ message RegisterResponse{
 service UserServiceRpc{
     rpc Login(LoginRequest) returns(LoginResponse);
     rpc Register(RegisterRequest) returns(RegisterResponse);
+=======
+service UserServiceRpc{
+    rpc Login(LoginRequest) returns(LoginResponse);
+>>>>>>> 8b4baa45c5657c41a2511b6ce8cdf3a9665db013
 }
