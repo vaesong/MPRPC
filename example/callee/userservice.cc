@@ -2,7 +2,7 @@
 #include <string>
 #include "user.pb.h"
 #include "mprpcapplication.h"
-#include "rpcprovider.h"
+#include "mprpcprovider.h"
 
 
 class Userservice : public fixbug::UserServiceRpc{
@@ -87,7 +87,7 @@ int main(int argc, char** argv){
     MprpcApplication::Init(argc, argv);
 
     //provider 是一个 rpc 网络服务对象，把 Userservice 对象发布到 rpc 节点上
-    RpcProvider provider;
+    MprpcProvider provider;
     provider.NotifyService(new Userservice());
 
     //启动一个 rpc 服务节点， Run 以后，进程进入阻塞状态，等待远程的 rpc 调用

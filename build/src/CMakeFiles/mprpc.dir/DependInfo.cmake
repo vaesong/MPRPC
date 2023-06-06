@@ -4,20 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-<<<<<<< HEAD
+  "/home/vaesong/Data/Workspace/Vscode/Mprpc/src/logger.cc" "/home/vaesong/Data/Workspace/Vscode/Mprpc/build/src/CMakeFiles/mprpc.dir/logger.cc.o"
   "/home/vaesong/Data/Workspace/Vscode/Mprpc/src/mprpcapplication.cc" "/home/vaesong/Data/Workspace/Vscode/Mprpc/build/src/CMakeFiles/mprpc.dir/mprpcapplication.cc.o"
   "/home/vaesong/Data/Workspace/Vscode/Mprpc/src/mprpcchannel.cc" "/home/vaesong/Data/Workspace/Vscode/Mprpc/build/src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o"
   "/home/vaesong/Data/Workspace/Vscode/Mprpc/src/mprpcconfig.cc" "/home/vaesong/Data/Workspace/Vscode/Mprpc/build/src/CMakeFiles/mprpc.dir/mprpcconfig.cc.o"
   "/home/vaesong/Data/Workspace/Vscode/Mprpc/src/mprpccontroller.cc" "/home/vaesong/Data/Workspace/Vscode/Mprpc/build/src/CMakeFiles/mprpc.dir/mprpccontroller.cc.o"
+  "/home/vaesong/Data/Workspace/Vscode/Mprpc/src/mprpcprovider.cc" "/home/vaesong/Data/Workspace/Vscode/Mprpc/build/src/CMakeFiles/mprpc.dir/mprpcprovider.cc.o"
   "/home/vaesong/Data/Workspace/Vscode/Mprpc/src/rpcheader.pb.cc" "/home/vaesong/Data/Workspace/Vscode/Mprpc/build/src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o"
-  "/home/vaesong/Data/Workspace/Vscode/Mprpc/src/rpcprovider.cc" "/home/vaesong/Data/Workspace/Vscode/Mprpc/build/src/CMakeFiles/mprpc.dir/rpcprovider.cc.o"
-=======
-  "/home/hrj/mprpc/src/mprpcapplication.cc" "/home/hrj/mprpc/build/src/CMakeFiles/mprpc.dir/mprpcapplication.cc.o"
-  "/home/hrj/mprpc/src/mprpcchannel.cc" "/home/hrj/mprpc/build/src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o"
-  "/home/hrj/mprpc/src/mprpcconfig.cc" "/home/hrj/mprpc/build/src/CMakeFiles/mprpc.dir/mprpcconfig.cc.o"
-  "/home/hrj/mprpc/src/rpcheader.pb.cc" "/home/hrj/mprpc/build/src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o"
-  "/home/hrj/mprpc/src/rpcprovider.cc" "/home/hrj/mprpc/build/src/CMakeFiles/mprpc.dir/rpcprovider.cc.o"
->>>>>>> 8b4baa45c5657c41a2511b6ce8cdf3a9665db013
+  "/home/vaesong/Data/Workspace/Vscode/Mprpc/src/zookeeperutil.cc" "/home/vaesong/Data/Workspace/Vscode/Mprpc/build/src/CMakeFiles/mprpc.dir/zookeeperutil.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

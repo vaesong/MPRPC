@@ -1,0 +1,40 @@
+[0:5:25] ==> [info]zookeeper_init success!
+[0:5:25] ==> [info]set znode success... path: /Userservice, data: setdata
+[0:6:7] ==> [info]zookeeper_init success!
+[0:6:7] ==> [info]set znode success... path: /Userservice, data: setdata
+[0:6:7] ==> [info]del znode success... path: /Userservice
+[20:8:5] ==> [info]service: FriendsServiceRpc、method: GetFriendsList
+[20:8:5] ==> [info]Rpcservice start service at ip: 127.0.0.1 port: 9190
+[20:8:13] ==> [info]zookeeper_init success!
+[20:8:13] ==> [error]get znode error... path: /FriendsServiceRpcGetFriendsList
+[20:8:51] ==> [info]service: FriendsServiceRpc、method: GetFriendsList
+[20:8:51] ==> [info]Rpcservice start service at ip: 127.0.0.1 port: 9190
+[20:8:53] ==> [info]zookeeper_init success!
+[20:8:53] ==> [error]get znode error... path: /FriendsServiceRpc/GetFriendsList
+[20:24:21] ==> [info]service: FriendsServiceRpc、method: GetFriendsList
+[20:24:21] ==> [info]Rpcservice start service at ip: 127.0.0.1 port: 9190
+[20:24:24] ==> [info]zookeeper_init success!
+[20:24:24] ==> [error]get znode error... path: /FriendsServiceRpc/GetFriendsList
+[20:25:0] ==> [info]service: FriendsServiceRpc、method: GetFriendsList
+[20:25:0] ==> [info]Rpcservice start service at ip: 127.0.0.1 port: 9190
+[20:26:14] ==> [info]service: FriendsServiceRpc、method: GetFriendsList
+[20:26:14] ==> [info]Rpcservice start service at ip: 127.0.0.1 port: 9190
+[20:26:44] ==> [info]service: FriendsServiceRpc、method: GetFriendsList
+[20:26:44] ==> [info]Rpcservice start service at ip: 127.0.0.1 port: 9190
+[20:32:55] ==> [info]service: FriendsServiceRpc、method: GetFriendsList
+[20:32:55] ==> [info]zookeeper_init success!
+[20:32:55] ==> [info]znode create success... path: /FriendsServiceRpc
+[20:32:55] ==> [info]znode create success... path: /FriendsServiceRpc/GetFriendsList
+[20:32:55] ==> [info]Rpcservice start service at ip: 127.0.0.1 port: 9190
+[20:32:59] ==> [info]zookeeper_init success!
+[20:32:55] ==> [info]=============================================
+[20:32:59] ==> [info]header_size: 37
+[20:32:59] ==> [info]rpc_header_str: 
+FriendsServiceRpcGetFriendsList
+[20:32:59] ==> [info]service_name: FriendsServiceRpc
+[20:32:59] ==> [info]method_name: GetFriendsList
+[20:32:59] ==> [info]args_size: 2
+[20:32:59] ==> [info]args_str: 
+[20:32:59] ==> [info]=============================================
+[20:32:59] ==> [info]request parse success, content: 
+[20:32:59] ==> [info]doing remote GetFriendsList! userid: 1

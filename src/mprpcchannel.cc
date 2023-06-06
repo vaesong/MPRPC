@@ -6,6 +6,7 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <unistd.h>
+#include "zookeeperutil.h"
 
 /*
 发送的请求头的数据格式
@@ -15,11 +16,12 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
                           google::protobuf::RpcController* controller, const google::protobuf::Message* request,
                           google::protobuf::Message* response, google::protobuf::Closure* done)
 {
-    // request 参数的序列化
+    //根据 method，获得 service_name 和 method_name
     const google::protobuf::ServiceDescriptor* sd = method->service();
     std::string service_name = sd->name();
     std::string method_name = method->name();
 
+    // request 参数的序列化
     uint32_t args_size = 0;
     std::string args_str;
     if(request->SerializeToString(&args_str)){
@@ -62,9 +64,9 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     std::cout << "args_str: " << args_str << std::endl;
     std::cout << "=============================================" << std::endl;
     
-    //通过 TCP 网络发送
-    std::string ip = MprpcApplication::GetInstance().GetConfig().Load("rpcserver_ip");
-    uint16_t port = atoi(MprpcApplication::GetInstance().GetConfig().Load("rpcserver_port").c_str());
+    // //通过 TCP 网络发送
+    // std::string ip = MprpcApplication::GetInstance().GetConfig().Load("rpcserver_ip");
+    // uint16_t port = atoi(MprpcApplication::GetInstance().GetConfig().Load("rpcserver_port").c_str());
 
     int clientfd = socket(AF_INET, SOCK_STREAM, 0);
     if(clientfd == -1){
@@ -72,6 +74,27 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
         close(clientfd);
         exit(EXIT_FAILURE);
     }
+
+
+    //通过 TCP 网络发送,不过是使用的 zookeeper 查询 ip和port
+    ZkClient zkcli;
+    zkcli.Start();
+    std::string method_path = "/" + service_name + "/" + method_name;
+    std::string host_data = zkcli.GetData(method_path.c_str());
+    if(host_data == ""){
+        controller->SetFailed(method_path + " is not exist!");
+        return;
+    }
+
+    int idx = host_data.find(':');
+    if(idx == -1){
+        controller->SetFailed(method_path + " address is invalid!!");
+        return;
+    }
+
+    //划分出 ip 和 port
+    std::string ip = host_data.substr(0, idx);
+    int port = atoi(host_data.substr(idx+1, host_data.size()-idx).c_str());
 
     struct sockaddr_in server_addr;
     bzero(&server_addr, sizeof(server_addr));

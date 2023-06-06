@@ -1,0 +1,24 @@
+[16:49:34] ==> [info]service: FriendsServiceRpc、method: GetFriendsList
+[16:49:34] ==> [info]Rpcservice start service at ip: 127.0.0.1 port: 9190
+[16:49:34] ==> [info]=============================================
+[16:49:42] ==> [info]header_size: 37
+[16:49:42] ==> [info]rpc_header_str: 
+[16:49:42] ==> [info]service_name: ��0qU
+[16:49:42] ==> [info]method_name: Pz�%�
+[16:49:42] ==> [info]args_size: 2
+[16:49:42] ==> [info]args_str: �z�%�
+[16:49:42] ==> [info]=============================================
+[16:49:42] ==> [info]request parse success, content: 
+[16:49:42] ==> [info]doing remote GetFriendsList! userid: 1
+[16:55:31] ==> [info]service: FriendsServiceRpc、method: GetFriendsList
+[16:55:31] ==> [info]Rpcservice start service at ip: 127.0.0.1 port: 9190
+[16:55:31] ==> [info]=============================================
+[16:55:35] ==> [info]header_size: 37
+[16:55:35] ==> [info]rpc_header_str: 
+[16:55:35] ==> [info]service_name: �M��U
+[16:55:35] ==> [info]method_name: �WԽ�
+[16:55:35] ==> [info]args_size: 2
+[16:55:35] ==> [info]args_str: 0XԽ�
+[16:55:35] ==> [info]=============================================
+[16:55:35] ==> [info]request parse success, content: 
+[16:55:35] ==> [info]doing remote GetFriendsList! userid: 1

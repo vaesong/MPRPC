@@ -6,11 +6,7 @@
 
 #IncludeRegexTransform: 
 
-<<<<<<< HEAD
 ../example/friend.pb.h
-=======
-../example/user.pb.h
->>>>>>> 8b4baa45c5657c41a2511b6ce8cdf3a9665db013
 limits
 -
 string
@@ -50,8 +46,23 @@ google/protobuf/port_def.inc
 google/protobuf/port_undef.inc
 -
 
+../src/include/lockqueue.h
+queue
+-
+thread
+-
+mutex
+-
+condition_variable
+-
+
+../src/include/logger.h
+string
+-
+lockqueue.h
+../src/include/lockqueue.h
+
 ../src/include/mprpcapplication.h
-<<<<<<< HEAD
 mprpcchannel.h
 ../src/include/mprpcchannel.h
 mprpccontroller.h
@@ -67,11 +78,6 @@ google/protobuf/message.h
 google/protobuf/descriptor.h
 -
 
-=======
-mprpcconfig.h
-../src/include/mprpcconfig.h
-
->>>>>>> 8b4baa45c5657c41a2511b6ce8cdf3a9665db013
 ../src/include/mprpcconfig.h
 iostream
 -
@@ -80,16 +86,13 @@ string
 unordered_map
 -
 
-<<<<<<< HEAD
 ../src/include/mprpccontroller.h
 google/protobuf/service.h
 -
 string
 -
 
-=======
->>>>>>> 8b4baa45c5657c41a2511b6ce8cdf3a9665db013
-../src/include/rpcprovider.h
+../src/include/mprpcprovider.h
 string
 -
 google/protobuf/service.h
@@ -103,34 +106,25 @@ muduo/net/InetAddress.h
 unordered_map
 -
 
-<<<<<<< HEAD
 /home/vaesong/Data/Workspace/Vscode/Mprpc/example/callee/friendservice.cc
-=======
-/home/hrj/mprpc/example/callee/userservice.cc
->>>>>>> 8b4baa45c5657c41a2511b6ce8cdf3a9665db013
 iostream
 -
 string
 -
-<<<<<<< HEAD
 friend.pb.h
 /home/vaesong/Data/Workspace/Vscode/Mprpc/example/callee/friend.pb.h
 mprpcapplication.h
 /home/vaesong/Data/Workspace/Vscode/Mprpc/example/callee/mprpcapplication.h
-rpcprovider.h
-/home/vaesong/Data/Workspace/Vscode/Mprpc/example/callee/rpcprovider.h
+mprpcprovider.h
+/home/vaesong/Data/Workspace/Vscode/Mprpc/example/callee/mprpcprovider.h
 vector
-=======
-user.pb.h
-/home/hrj/mprpc/example/callee/user.pb.h
-mprpcapplication.h
-/home/hrj/mprpc/example/callee/mprpcapplication.h
-rpcprovider.h
-/home/hrj/mprpc/example/callee/rpcprovider.h
+-
+logger.h
+/home/vaesong/Data/Workspace/Vscode/Mprpc/example/callee/logger.h
 
-/home/hrj/mprpc/example/user.pb.cc
-user.pb.h
-/home/hrj/mprpc/example/user.pb.h
+/home/vaesong/Data/Workspace/Vscode/Mprpc/example/friend.pb.cc
+friend.pb.h
+/home/vaesong/Data/Workspace/Vscode/Mprpc/example/friend.pb.h
 algorithm
 -
 google/protobuf/io/coded_stream.h
@@ -152,7 +146,7 @@ google/protobuf/port_def.inc
 google/protobuf/port_undef.inc
 -
 
-/home/hrj/mprpc/example/user.pb.h
+/home/vaesong/Data/Workspace/Vscode/Mprpc/example/friend.pb.h
 limits
 -
 string
@@ -190,6 +184,5 @@ google/protobuf/unknown_field_set.h
 google/protobuf/port_def.inc
 -
 google/protobuf/port_undef.inc
->>>>>>> 8b4baa45c5657c41a2511b6ce8cdf3a9665db013
 -
 
